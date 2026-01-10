@@ -1,0 +1,63 @@
+export const tech = [{
+    id: 1, 
+    title: "HTML",
+    image: "/icons/html.png",
+    web: "https://github.com",
+    tags: ["html"],
+}, {
+    id: 2, 
+    title: "CSS",
+    image: "/icons/css.png",
+    web: "https://github.com",
+    tags: ["css"],
+}, {
+    id: 3, 
+    title: "JavaScript",
+    image: "/icons/javascript.png",
+    web: "https://github.com",
+    tags: ["js"],
+}, {
+    id: 4, 
+    title: "NextJs",
+    image: "/icons/nextjs.png",
+    web: "https://github.com",
+    tags: ["nextjs"],
+}, , {
+    id: 5, 
+    title: "TypeScript",
+    image: "/icons/typescript.png",
+    web: "https://github.com",
+    tags: ["typescript"],
+}, {
+    id: 6, 
+    title: "TailWind",
+    image: "/icons/tailwind.png",
+    web: "https://github.com",
+    tags: ["tailwind"],
+}, {
+    id: 7, 
+    title: "Shadcn",
+    image: "/icons/shadcn.png",
+    web: "https://github.com",
+    tags: ["shadcn"],
+}, {
+    id: 8, 
+    title: "Java",
+    image: "/icons/java.png",
+    web: "https://github.com",
+    tags: ["java"],
+}, {
+    id: 9, 
+    title: "Clerk",
+    image: "/icons/clerk.png",
+    web: "https://github.com",
+    tags: ["clerk"],
+}, {
+    id: 10, 
+    title: "mysql",
+    image: "/icons/mysql.png",
+    web: "https://github.com",
+    tags: ["mysql"],
+}
+
+];
