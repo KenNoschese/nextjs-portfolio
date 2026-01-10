@@ -4,7 +4,7 @@ export const projects = [{
     description: "A jeepney route system with over 50+ routes and 100+ locations. Made with Java and Mysql.",
     image: "/projects/para_.png",
     tags: ["Java, Mysql"],
-    github: "https://github.com",
+    github: "https://github.com/KenNoschese/Para/",
 }, {
     id: 2,
     title: "Placeholder",

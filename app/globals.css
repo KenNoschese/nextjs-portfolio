@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
 
 :root {
   --background: #ffffff;
@@ -28,4 +24,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .animate-fade {
+    animation-name: fadeIn;
+    animation-duration: var(--animate-duration, 1s);
+    animation-timing-function: var(--animate-ease, linear);
+    animation-fill-mode: forwards;
+  }
+
+  .animate-duration-1000 {
+    --animate-duration: 1000ms;
+  }
+  .animate-duration-500 {
+    --animate-duration: 500ms;
+  }
+  .animate-ease-in-out {
+    --animate-ease: ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
