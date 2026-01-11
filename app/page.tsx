@@ -3,11 +3,12 @@ import Icons from "@/components/Icons";
 import Arrows from "@/components/Arrows";
 import Works from "@/components/Works";
 import BackArrow from "@/components/BackArrow";
+import ProgressBar from "@/components/ProgressBar";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <BackArrow />
       <section
         id="home"
         className="flex flex-col items-center justify-between min-h-screen py-10"
@@ -29,15 +30,18 @@ export default function Home() {
         id="works"
         className="min-h-screen bg-gray-800 flex items-center justify-center"
       >
+        <ProgressBar />
         <div className="">
           <Works />
         </div>
       </section>
       <section
         id="about"
-        className="min-h-screen flex items-center justify-center"
+        className="min-h-screen flex max-w-4xl mt-32 justify-center mx-auto"
       >
-        <div className="">About </div>
+        <div className=""> 
+          <About />
+        </div>
       </section>
       <section
         id="contact"

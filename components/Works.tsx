@@ -7,8 +7,11 @@ import Link from "next/link";
 function Works() {
   
   return (
-    <div>
-        <div className="flex flex-wrap justify-center gap-[4vmin]">
+    <div className="flex flex-col items-center">
+        <div className="pb-20">
+          <h1 className="font-light text-4xl"> Works </h1>  
+        </div>
+        <div className="flex flex-wrap justify-center gap-[4vmin] pt-4">
             {projects.map((project) => (
               <Link key= {project.id} href={project.github} target="_blank" rel="noopener noreferrer" 
                 className="relative w-[40vmin] h-[56vmin] group cursor-pointer overflow-hidden">
