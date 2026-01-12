@@ -2,39 +2,51 @@
 import { projects } from "@/src/data/project";
 import Image from "next/image";
 import Link from "next/link";
-// import { useState } from "react";
+import { tech } from "@/src/data/tech";
+
 
 function Works() {
   
   return (
     <div className="flex flex-col items-center">
-        <div className="pb-20">
-          <h1 className="font-light text-4xl"> Works </h1>  
+        <div className="pb-10">
+          <h1 className="font-extralight text-4xl"> Works </h1>  
         </div>
         <div className="flex flex-wrap justify-center gap-[4vmin] pt-4">
-            {projects.map((project) => (
-              <Link key= {project.id} href={project.github} target="_blank" rel="noopener noreferrer" 
-                className="relative w-[40vmin] h-[56vmin] group cursor-pointer overflow-hidden">
+            {projects.map((project) => {
+  const projectTech = tech.filter((t) => project.tags.includes(t?.title || "Title"));
 
-                <Image 
-                  src = {project.image}
-                  fill
-                  objectPosition="center" 
-                  alt = "Image of a project"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 rounded-2xl"
-                />
+  return (
+    <div key={project.id} className="flex flex-col items-center">
 
-                <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-500 
-                  group-hover:opacity-100 group-hover:scale-110 flex flex-col items-center justify-center">
-
-                  <div className="flex flex-col items-centern text-left m-10">
-                    <h1 className="text-white text-2xl font-light">{project.title}</h1>
-                    <p className="text-sm font-light">{project.description}</p>
-                  </div>
-
-                </div>
-              </Link>
-            ))}
+      <Link href={project.github} className="relative w-[40vmin] h-[56vmin] group overflow-hidden rounded-2xl">
+        <Image 
+          src={project.image}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          alt={project.title}
+        />
+        
+        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-8">
+          <h1 className="text-white text-2xl font-light">{project.title}</h1>
+          <p className="text-white/80 text-sm font-light">{project.description}</p>
+        </div>
+      </Link>
+      <div className="flex gap-3 mt-4 ">
+        {projectTech.map((t) => (
+          <div key={t?.id} className="relative w-8 h-8" title={t?.title}>
+            <Image 
+              src={t?.image || "/html.png"}
+              width={28}
+              height={28}
+              alt={t?.title || "Tech icon"}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+})}
         </div>
     </div>
   )

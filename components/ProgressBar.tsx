@@ -33,14 +33,14 @@ function ProgressBar() {
     }, []);
     
   return (
-    <div className={`fixed top-13 left-13 flex flex-col 
+    <div className={`fixed top-13 left-15 flex flex-col 
         ${activeSection === "home" ? 'opacity-0 -translate-x-6 duration-1000 pointer-events-none' : 'opacity-100 translate-x-0 duration-600'}`}>
 
         {sections.map((section) => (
             <a  
                 href={`#${section.id}`}
                 key={section.id}
-                className={`text-2xl pb-2 hover:text-cyan-900 ${activeSection === section.id ? 'text-white-800 font-bold' : 'text-gray-700'}`}
+                className={`text-4xl pb-2 hover:text-cyan-900 ${activeSection === section.id ? 'text-white-800 font-bold' : 'text-gray-700'}`}
             >
                 {section.label}
             </a>

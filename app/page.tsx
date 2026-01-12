@@ -5,6 +5,7 @@ import Works from "@/components/Works";
 import BackArrow from "@/components/BackArrow";
 import ProgressBar from "@/components/ProgressBar";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -45,9 +46,11 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="min-h-screen flex items-center justify-center"
+        className="min-h-screen flex max-w-4xl justify-center items-center mx-auto"
       >
-        <div className="">Contact </div>
+        <div className="">
+          <Contact />
+        </div>
       </section>
     </div>
   );

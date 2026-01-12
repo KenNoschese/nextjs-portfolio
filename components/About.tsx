@@ -2,7 +2,7 @@ import { aboutMe } from "@/src/data/about"
 
 function About() {
   return (
-    <div className="flex flex-col items-left gap-4 text-left">
+    <div className="flex flex-col gap-4 text-left">
         <div>
             <h1 className="text-4xl font-bold">{aboutMe.name}</h1>
             <h2 className="text-2xl font-extralight text-gray-300">{aboutMe.role}</h2>
@@ -42,18 +42,21 @@ function About() {
             <div className="m-6">
                 {aboutMe.experience.map((exp, index) => (
                     <div key={index} className="flex flex-col"> 
-                        <span className="text-3xl text-gray-400">
+                        <span className="text-3xl text-cyan-700">
                             {exp.title}
                         </span>
                         <span className="text-lg font-extralight">
                             {exp.date}
                         </span>
-                        <span className="text-xl text-gray-300 pt-2">
+                        <span className="text-xl text-gray-300 pt-2 pb-5">
                             {exp.value}
                         </span>
                     </div>
                 ))}
             </div>
+        </div>
+        <div>
+
         </div>
     </div>
   )

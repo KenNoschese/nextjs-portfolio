@@ -2,7 +2,7 @@ export const aboutMe = {
     name: "Kenmario O. Noschese",
     role: "Computer Science Student",
     description: '"Building functional web experiences"',
-    bio: "Currently pursuing a B.S. in Computer Science, I focus on the intersection of backend logic and clean, intuitive UI.",
+    bio: "Currently pursuing a B.S. in Computer Science, I focus on the i   ntersection of backend logic and clean, intuitive UI.",
     
     interests: "I love reading!",
     
@@ -14,6 +14,7 @@ export const aboutMe = {
 
     experience: [
         { date: "2024-present", title: "Google", value: "Senior Software Engineer"},
+        { date: "2016-present", title: "10k Finisher", value: "Finisher"}
     ],
     
     education: " Bachelors of Science in Computer Science",
