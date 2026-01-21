@@ -12,6 +12,6 @@ export const projects = [{
     image: "/projects/keyboard.jpg",
     tags: ["NextJs", "TypeScript", "TailWind", "Shadcn", "Clerk"],
     github: "https://github.com",
-},
+}, 
 
 ];
