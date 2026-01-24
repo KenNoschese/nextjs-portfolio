@@ -12,6 +12,13 @@ export const projects = [{
     image: "/projects/keyboard.jpg",
     tags: ["NextJs", "TypeScript", "TailWind", "Shadcn", "Clerk"],
     github: "https://github.com",
+}, {
+    id: 3,
+    title: "Color",
+    description: "A color palette generator. ",
+    image: "/projects/color.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://kennoschese.github.io/Palette_Generator/",
 }, 
 
 ];
