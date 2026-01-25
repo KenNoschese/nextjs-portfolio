@@ -11,6 +11,7 @@ const recoleta = localFont({
 
 export const metadata: Metadata = {
   title: "Portfolio",
+  viewport: 'width=device-width, initial-scale=1'
 };
 
 export default function RootLayout({
