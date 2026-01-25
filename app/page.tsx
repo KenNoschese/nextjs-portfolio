@@ -29,7 +29,7 @@ export default function Home() {
       </section>
       <section
         id="works"
-        className="min-h-screen bg-gray-800 flex items-center justify-center py-20"
+        className="min-h-screen bg-gray-800 flex items-center justify-center"
       >
         <ProgressBar />
         <div className="">
