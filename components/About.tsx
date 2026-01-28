@@ -1,6 +1,6 @@
 'use client';
 import { aboutMe } from "@/src/data/about"
-import { motion } from "framer-motion";
+import { motion, Variant, VariantLabels, Variants } from "framer-motion";
 
 function About() {
   const containerVariants = {
@@ -31,19 +31,19 @@ function About() {
       viewport={{ once: true, amount: 0.2 }}
       className="flex flex-col gap-10 text-left px-4 md:px-0 max-w-4xl mx-auto"
     >
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants as Variants}>
             <h1 className="text-4xl md:text-5xl font-bold mb-2">{aboutMe.name}</h1>
             <h2 className="text-xl md:text-2xl font-light text-cyan-400">{aboutMe.role}</h2>
         </motion.div>
 
         <motion.p 
-          variants={itemVariants}
+          variants={itemVariants as Variants}
           className="text-2xl md:text-3xl font-light leading-relaxed text-gray-200"
         >
             {aboutMe.description}
         </motion.p>
 
-        <motion.div variants={itemVariants} className="space-y-6 text-gray-400 text-lg leading-relaxed">
+        <motion.div variants={itemVariants as Variants} className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>{aboutMe.bio}</p>
             <p>
                 I am currently a 2nd year student at <span className="text-white font-medium">{aboutMe.university}</span>.
@@ -52,7 +52,7 @@ function About() {
         </motion.div>
 
         <motion.div 
-            variants={itemVariants}
+            variants={itemVariants as Variants}
             className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8 border-y border-white/10"
         >
             {aboutMe.stats.map((stat, index) => (
@@ -67,7 +67,7 @@ function About() {
             ))}
         </motion.div>
 
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants as Variants}>
             <h2 className="text-2xl font-bold mb-8">Experience</h2>
 
             <div className="space-y-8 border-l border-white/10 pl-8 ml-3">
@@ -78,8 +78,7 @@ function About() {
                         whileHover={{ x: 10 }}
                         transition={{ type: "spring", stiffness: 200, damping: 20 }}
                     >
-                        {/* Timeline Dot */}
-                        <div className="absolute -left-[39px] top-2 w-3 h-3 rounded-full bg-cyan-500 ring-4 ring-[#171717]" />
+                        <div className="absolute -left-9.75 top-2 w-3 h-3 rounded-full bg-cyan-500 ring-4 ring-[#171717]" />
                         
                         <div className="flex flex-col gap-1">
                             <span className="text-xl md:text-2xl text-white font-medium">
