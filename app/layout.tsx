@@ -4,9 +4,15 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import localFont from 'next/font/local'
 
-const recoleta = localFont({
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const fraunces = localFont({
   src: '../public/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf', 
-  variable: '--font-recoleta',
+  variable: '--font-fraunces',
 })
 
 export const metadata: Metadata = {
@@ -20,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={recoleta.className}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${fraunces.variable} ${inter.variable} antialiased bg-[#171717] text-white selection:bg-cyan-500/30`}>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

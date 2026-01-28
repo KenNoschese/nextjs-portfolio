@@ -5,6 +5,7 @@ export const projects = [{
     image: "/projects/para_.png",
     tags: ["Java", "mysql"],
     github: "https://github.com/KenNoschese/Para/",
+    live_url: null, 
 }, {
     id: 2,
     title: "Space",
@@ -12,13 +13,15 @@ export const projects = [{
     image: "/projects/keyboard.jpg",
     tags: ["NextJs", "TypeScript", "TailWind", "Shadcn", "Clerk"],
     github: "https://github.com",
+    live_url: null,
 }, {
     id: 3,
     title: "Color",
     description: "A color palette generator. ",
     image: "/projects/color.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://kennoschese.github.io/Palette_Generator/",
+    github: "https://github.com/KenNoschese/Palette_Generator",
+    live_url: "https://kennoschese.github.io/Palette_Generator/", 
 }, 
 
 ];

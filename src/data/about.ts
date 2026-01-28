@@ -2,9 +2,9 @@ export const aboutMe = {
     name: "Kenmario O. Noschese",
     role: "Computer Science Student",
     description: '"Building functional web experiences"',
-    bio: "Currently pursuing a B.S. in Computer Science, I focus on the intersection of backend logic and clean, intuitive UI.",
+    bio: "Currently pursuing a B.S. in Computer Science at Ateneo de Davao University. I focus on the intersection of backend logic and clean, intuitive UI, with a passion for building scalable web applications.",
     
-    interests: "I love reading!",
+    interests: "Exploring new tech stacks, System Design, and Open Source Contributing.",
     
     stats: [
         { label: "Location", value: "Davao City, PH" },
@@ -13,8 +13,7 @@ export const aboutMe = {
     ],
 
     experience: [
-        { date: "2024 - present", title: "Google", value: "Senior Software Engineer"},
-        { date: "2023", title: "10k Finisher", value: "Finisher"}
+        { date: "2023 - Present", title: "CS Student", value: "Ateneo de Davao University"},
     ],
     
     education: " Bachelors of Science in Computer Science",
