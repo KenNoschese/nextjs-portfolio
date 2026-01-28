@@ -1,5 +1,6 @@
 'use client';
 import { aboutMe } from "@/src/data/about"
+import { tech } from "@/src/data/tech"
 import { motion, Variant, VariantLabels, Variants } from "framer-motion";
 
 function About() {
@@ -91,6 +92,23 @@ function About() {
                                 {exp.value}
                             </span>
                         </div>
+                    </motion.div>
+                ))}
+            </div>
+        </motion.div>
+
+        <motion.div variants={itemVariants as Variants}>
+            <h2 className="text-2xl font-bold mb-8">Technologies</h2>
+            <div className="flex flex-wrap gap-3">
+                {tech.map((item) => (
+                    <motion.div 
+                        key={item.id}
+                        className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/5 transition-all duration-300 group"
+                        whileHover={{ y: -2 }}
+                    >
+                        <span className="text-sm md:text-base text-gray-400 group-hover:text-cyan-400 font-medium transition-colors">
+                            {item.title}
+                        </span>
                     </motion.div>
                 ))}
             </div>

@@ -22,7 +22,7 @@ export const tech = [{
     image: "/icons/nextjs.png",
     web: "https://github.com",
     tags: ["nextjs"],
-}, , {
+}, {
     id: 5, 
     title: "TypeScript",
     image: "/icons/typescript.png",
