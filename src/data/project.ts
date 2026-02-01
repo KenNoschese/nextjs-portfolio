@@ -22,6 +22,14 @@ export const projects = [{
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/KenNoschese/Palette_Generator",
     live_url: "https://kennoschese.github.io/Palette_Generator/", 
+}, {
+    id: 4,
+    title: "Nexus",
+    description: "Work in progress",
+    image: "/projects/keyboard.jpg",
+    tags: ["NextJs", "TypeScript", "TailWind", "neon", "Clerk", "drizzle"],
+    github: "https://github.com/KenNoschese/Nexus",
+    live_url: null, 
 }, 
 
 ];

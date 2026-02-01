@@ -58,6 +58,18 @@ export const tech = [{
     image: "/icons/mysql.png",
     web: "https://github.com",
     tags: ["mysql"],
+}, {
+    id: 11, 
+    title: "neon", 
+    image: "/icons/neon.png",
+    web: "https://neon.com",
+    tags: ["neon"],
+}, {
+    id: 12, 
+    title: "drizzle", 
+    image: "/icons/drizzle.png",
+    web: "https://orm.drizzle.team",
+    tags: ["neon"],
 }
 
 ];
