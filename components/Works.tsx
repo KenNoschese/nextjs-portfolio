@@ -25,7 +25,6 @@ function ProjectCard({ project }: { project: any }) {
       className="group relative border border-white/10 bg-gray-900/40 rounded-3xl overflow-hidden hover:border-white/20 transition-colors duration-300"
       onMouseMove={handleMouseMove}
     >
-      {/* Spotlight Gradient */}
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 transition duration-300 group-hover:opacity-100 z-10"
         style={{
@@ -39,8 +38,7 @@ function ProjectCard({ project }: { project: any }) {
         }}
       />
 
-      <div className="flex flex-col h-full relative z-20"> {/* Changed from Link to div */}
-        {/* Image Section */}
+      <div className="flex flex-col h-full relative z-20"> 
         <div className="relative aspect-[16/9] overflow-hidden border-b border-white/5">
           <Image
             src={project.image}
@@ -51,7 +49,6 @@ function ProjectCard({ project }: { project: any }) {
           <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
         </div>
 
-        {/* Content Section */}
         <div className="p-6 flex flex-col flex-1 gap-4">
           <div className="flex justify-between items-start">
             <h3 className="text-2xl font-bold group-hover:text-cyan-400 transition-colors duration-300">

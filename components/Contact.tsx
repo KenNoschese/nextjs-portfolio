@@ -22,7 +22,7 @@ function Contact() {
         </p>
 
         <motion.a
-          href="kennoschese@gmail.com" 
+          href="mailto:kennoschese@gmail.com" 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full text-lg font-bold tracking-wide overflow-hidden"
