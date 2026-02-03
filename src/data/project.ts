@@ -25,11 +25,11 @@ export const projects = [{
 }, {
     id: 4,
     title: "Nexus",
-    description: "Work in progress",
-    image: "/projects/keyboard.jpg",
-    tags: ["NextJs", "TypeScript", "TailWind", "neon", "Clerk", "drizzle"],
+    description: "A unified task manager.",
+    image: "/projects/nexus.png",
+    tags: ["NextJs", "TypeScript", "TailWind", "supabase", "Clerk", "drizzle"],
     github: "https://github.com/KenNoschese/Nexus",
-    live_url: null, 
+    live_url: "https://nexus-clicksync.vercel.app/", 
 }, 
 
 ];

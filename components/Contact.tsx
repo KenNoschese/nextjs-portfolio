@@ -22,7 +22,7 @@ function Contact() {
         </p>
 
         <motion.a
-          href="mailto:hello@kenmario.dev" // Placeholder email
+          href="kennoschese@gmail.com" 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full text-lg font-bold tracking-wide overflow-hidden"
@@ -39,7 +39,7 @@ function Contact() {
         <div className="mt-16 pt-8 border-t border-white/10 w-full flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <span>© 2026 Kenmario O. Noschese</span>
           <div className="flex gap-6">
-             {/* Simple text links for footer navigation if needed, or just keep it clean */}
+            
              <a href="#home" className="hover:text-white transition-colors">Home</a>
              <a href="#about" className="hover:text-white transition-colors">About</a>
              <a href="#works" className="hover:text-white transition-colors">Works</a>
